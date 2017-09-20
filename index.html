@@ -13,16 +13,19 @@
 		background-color: gray;
 	}
 	
+	.container{
+		/* display: table-cell; */
+	}
 	.div-main{
 		float: left;
 		display: inline-block;
-		max-width: 80%;
+		max-width: 75%;
 		box-sizing: border-box;
 	}
 	
 	.div-secondary{
 		display: inline-block;
-		max-width: 20%;
+		max-width: 25%;
 		box-sizing: border-box;
 	}
 
@@ -70,6 +73,17 @@
 	.text-centered {
 		text-align: center;
 	}
+
+	.progress{
+		text-align: left;
+	}
+
+	.angel-tag{
+		font-size: 10px;
+	}
+
+	.glyphicon { margin-right:5px;}
+	.rating .glyphicon {font-size: 22px;}
 </style>
 
 <body>
@@ -84,19 +98,20 @@
 		</h5>
 	</div>
 
+
 	<!-- Este div contiene la info principal -->
-	<div class="div-main">
+	<div class="div-main col--9">
 
 
 	<!-- Linea inicial con //Acerca de -->
 	<div class="row">
-		<h5 class="naranjo col-10"> // Acerca de </h5>
+		<h5 class="naranjo col-12"> // Acerca de </h5>
 	</div>
 
 
 	<div class="row">
 		<!-- Acerca de  -->
-		<h6 class="col-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus totam officia deserunt odio quasi asperiores error sed itaque ea saepe minus doloribus iste sequi libero illum, rem animi. Illum, ducimus.</h6>		
+		<h6 class="col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus totam officia deserunt odio quasi asperiores error sed itaque ea saepe minus doloribus iste sequi libero illum, rem animi. Illum, ducimus.</h6>		
 	</div>
 
 	<div class="row">
@@ -135,7 +150,7 @@
 	</div>
 
 	<!-- Este div contiene la info secundaria del personaje -->
-	<div class="div-secondary">
+	<div class="div-secondary col-2 ml-auto">
 		<h5 class="naranjo col-12"> // Contacto </h5>
 			<!-- Contactos -->
 		<h6 class="col-12 contact">
@@ -147,7 +162,39 @@
 			</ul>
 		</h6>		
 
-	<!-- cierre del div info secundaria -->
+
+		<h5 class="naranjo col-12"> // Skills </h5>
+			<!-- Skills -->
+			<div class="progress">
+			  <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Python</div>
+			</div>	
+			<div class="progress">
+			  <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90">HTML
+			  </div>
+			</div>	
+			<div class="progress">
+			  <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="75">CSS
+			  </div>
+			</div>	
+			<div class="progress">
+			  <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="45">JS
+			  </div>
+			</div>
+			<div class="progress">
+			  <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="30">PHP
+			  </div>
+			</div>
+
+		<h5 class="naranjo col-12"> // Idiomas </h5>
+		<h6>Ingles</h6>
+		<h6>Español</h6>
+
+
+		<h5 class="naranjo col-12"> // HOBBIES </h5>
+		<button type="button" class="btn btn-outline-secondary btn-sm angel-tag">Fotografia</button>
+		<button type="button" class="btn btn-outline-secondary btn-sm angel-tag">Viajes</button>
+		<button type="button" class="btn btn-outline-secondary btn-sm angel-tag">Bicicleta</button>
+		<!-- cierre del div info secundaria -->
 	</div>
 
 
